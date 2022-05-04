@@ -112,7 +112,7 @@ const Main = (props) => {
         <HighchartsReact highcharts={Highcharts} allowChartUpdate={true}
         options={options} />
         <Col md={2} style={{ margin: 'auto', padding: '10px', width: '75%', justifyContent: 'center', textAlign: 'center'}}>
-          <div style={{ height: '400px' }}>
+          <div>
             <RangeSlider defaultValue={5}
                           step={1}
                           graduated

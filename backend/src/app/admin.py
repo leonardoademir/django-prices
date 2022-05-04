@@ -1,3 +1,9 @@
 from django.contrib import admin
+from app.models import PriceModel
 
-# Register your models here.
+
+class PriceAdmin(admin.ModelAdmin):
+    list_display= ('currency', 'date', 'value')
+    
+  
+admin.site.register(PriceModel, PriceAdmin)
